@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_cart/routes/app_routes.dart';
 
 class SignInScreen extends StatelessWidget {
   @override
@@ -26,7 +27,7 @@ class SignInScreen extends StatelessWidget {
                 ElevatedButton.icon(
                   icon: Icon(Icons.g_mobiledata),
                   label: Text("Continue with Google"),
-                  onPressed: () {},
+                  onPressed: () => Navigator.pushNamed(context, AppRoutes.enterNumber),
                   style: ElevatedButton.styleFrom(backgroundColor: Colors.blue[700]),
                 ),
                 SizedBox(height: 10),
