@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_cart/routes/app_routes.dart';
 
 class EnterNumberScreen extends StatefulWidget {
   @override
@@ -13,6 +14,7 @@ class _EnterNumberScreenState extends State<EnterNumberScreen> {
     if (phone.isNotEmpty) {
       // Proceed to OTP or next screen
       print("Phone entered: $phone");
+      Navigator.pushNamed(context, AppRoutes.otpVerification);
     }
   }
 
