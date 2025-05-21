@@ -127,7 +127,6 @@ class RecipeDetailsScreen extends StatelessWidget {
               backgroundColor: Color(0xFFFF5C2E),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16),
-                Tex
               ),
             ),
             child: Text(
