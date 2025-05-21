@@ -24,9 +24,9 @@
 
 ## 📸 Screenshots
 
-| Home Screen | Explore Screen | Product Detail | Checkout Modal |
-|------------|----------------|----------------|----------------|
-| ![Home](screenshots/home.png) | ![Explore](screenshots/explore.png) | ![Product](screenshots/product.png) | ![Checkout](screenshots/checkout.png) |
+| Home Screen                          | Explore Screen                             | Product Detail                             | Checkout Modal                               |
+|--------------------------------------|--------------------------------------------|--------------------------------------------|----------------------------------------------|
+| ![Home](assets/screenshots/home.png) | ![Explore](assets/screenshots/explore.png) | ![Product](assets/screenshots/product.png) | ![Checkout](assets/screenshots/checkout.png) |
 
 ---
 
