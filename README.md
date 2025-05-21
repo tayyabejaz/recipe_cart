@@ -1,16 +1,36 @@
-# recipe_cart
+<p align="center">
+  <img src="assets/images/logo.png" width="120" alt="RecipeCart Logo" />
+</p>
 
-A Recipe Cart
+<h1 align="center">🍲 RecipeCart</h1>
 
-## Getting Started
+<p align="center">A modern food & grocery app built in Flutter. Watch, cook, and shop your favorite recipes and ingredients with ease.</p>
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 🔐 User Authentication (Sign In / Sign Up)
+- 🛒 Visual product browsing
+- 🥗 Recipe detail view with ingredients
+- 📦 Add to cart, checkout, and order flow
+- ❤️ Favorite items
+- 🧾 Profile management
+- 📱 Fully responsive design
+- 🧭 Bottom navigation bar
+- 🎨 Clean UI inspired by modern design principles
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📸 Screenshots
+
+| Home Screen | Explore Screen | Product Detail | Checkout Modal |
+|------------|----------------|----------------|----------------|
+| ![Home](screenshots/home.png) | ![Explore](screenshots/explore.png) | ![Product](screenshots/product.png) | ![Checkout](screenshots/checkout.png) |
+
+> _Place actual screenshots inside the `/screenshots/` folder and update paths above accordingly._
+
+---
+
+## 📁 Folder Structure
+

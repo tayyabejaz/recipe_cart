@@ -21,7 +21,7 @@ class OnboardingScreen extends StatelessWidget {
                 SizedBox(height: 30),
                 CommonButton(
                   text: "Get Started",
-                  onPressed: () => Navigator.pushNamed(context, AppRoutes.signin),
+                  onPressed: () => Navigator.pushNamed(context, AppRoutes.entryScreen),
                 )
               ],
             ),

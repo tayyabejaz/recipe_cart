@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:recipe_cart/screens/account_screen.dart';
 import 'package:recipe_cart/screens/enter_number_screen.dart';
+import 'package:recipe_cart/screens/entry_screen.dart';
 import 'package:recipe_cart/screens/explore_screen.dart';
 import 'package:recipe_cart/screens/favorites_screen.dart';
 import 'package:recipe_cart/screens/home_screen.dart';
@@ -33,6 +33,7 @@ class AppRoutes {
   static const myCart = '/my-cart';
   static const favorites = '/favorites';
   static const orderPlaced = '/order-placed';
+  static const entryScreen = './entry-screen';
 
   static final routes = {
     splash: (context) => SplashScreen(),
@@ -51,5 +52,6 @@ class AppRoutes {
     myCart: (context) => MyCartScreen(),
     favorites: (context) => FavoritesScreen(),
     orderPlaced: (context) => OrderPlacedScreen(),
+    entryScreen : (context) => EntryScreen()
   };
 }

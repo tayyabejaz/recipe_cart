@@ -63,6 +63,22 @@ flutter:
      - assets/images/onboarding_image.jpg
      - assets/images/signin_image.jpg
      - assets/images/au_flag.jpg
+     - assets/images/breakfast_first.jpg
+     - assets/images/breakfast_second.jpg
+     - assets/images/macrons.jpg
+     - assets/images/pasta.jpg
+     - assets/images/banner.png
+     - assets/images/explore_screen/bakery.png
+     - assets/images/explore_screen/beverages.png
+     - assets/images/explore_screen/cooking_oil.png
+     - assets/images/explore_screen/dairy.png
+     - assets/images/explore_screen/fruits.png
+     - assets/images/explore_screen/meat.png
+     - assets/images/my_cart/bananas.png
+     - assets/images/my_cart/bell_pepper.png
+     - assets/images/my_cart/ginger.png
+     - assets/images/placeholder.png
+     - assets/images/logo.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
