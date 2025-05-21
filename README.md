@@ -1,49 +1,39 @@
-<p align="center">
-  <img src="assets/images/logo.png" width="120" alt="RecipeCart Logo" />
-</p>
-
-<h1 align="center">🍲 RecipeCart</h1>
-
-<p align="center">A modern food & grocery app built in Flutter. Watch, cook, and shop your favorite recipes and ingredients with ease.</p>
+<div align="center">
+  <img src="assets/images/app_logo.png" alt="RecipeCart Logo" width="120"/>
+  <h1>RecipeCart 🍳🛒</h1>
+  <p>Watch, Cook & Shop - A seamless mobile experience for discovering recipes and purchasing ingredients</p>
+</div>
 
 ---
 
-## ✨ Features
+## 🌟 Features
 
-- 🔐 User Authentication (Sign In / Sign Up)
-- 🛒 Visual product browsing
-- 🥗 Recipe detail view with ingredients
-- 📦 Add to cart, checkout, and order flow
-- ❤️ Favorite items
-- 🧾 Profile management
-- 📱 Fully responsive design
-- 🧭 Bottom navigation bar
-- 🎨 Clean UI inspired by modern design principles
-
----
-
-## 📸 Screenshots
-
-| Home Screen                          | Explore Screen                             | Product Detail                             | Checkout Modal                               |
-|--------------------------------------|--------------------------------------------|--------------------------------------------|----------------------------------------------|
-| ![Home](assets/screenshots/home.png) | ![Explore](assets/screenshots/explore.png) | ![Product](assets/screenshots/product.png) | ![Checkout](assets/screenshots/checkout.png) |
+- 🛒 View and shop for grocery items with a modern UI
+- 📋 Browse recipes and add ingredients directly to cart
+- 📱 OTP-based phone number login
+- 💬 Social login with Google and Facebook
+- 📦 Organized cart & checkout with promo code support
+- 🧑 User account management
+- 🌐 Responsive and optimized design for all screens
 
 ---
 
 ## 📁 Folder Structure
+
+```
 lib/
-├── main.dart # Entry point of the app
-├── constants/ # App constants and colors
-├── screens/ # All UI Screens
-│ ├── auth/ # Login, Signup, OTP, Splash
-│ ├── home/ # Home screen, categories, banners
-│ ├── cart/ # My Cart and Checkout Modal
-│ ├── account/ # Account related screens
-│ └── product/ # Product and Recipe details
-├── widgets/ # Reusable widgets
-├── routes/ # App route management
-├── utils/ # Utility functions (e.g., Toasts)
-└── models/ # Data models (if any)
+├── main.dart                 # Entry point of the app
+├── constants/               # App constants and colors
+├── screens/                 # All UI Screens
+│   ├── auth/                # Login, Signup, OTP, Splash
+│   ├── home/                # Home screen, categories, banners
+│   ├── cart/                # My Cart and Checkout Modal
+│   ├── account/             # Account related screens
+│   └── product/             # Product and Recipe details
+├── widgets/                 # Reusable widgets
+├── routes/                  # App route management
+├── utils/                   # Utility functions (e.g., Toasts)
+```
 
 ---
 
@@ -73,3 +63,29 @@ flutter pub get
 
 # 3. Run the app
 flutter run
+```
+
+
+---
+
+## 🔍 Screenshots
+
+| Home Screen                      | Product Screen                      | Checkout                             |
+|----------------------------------|-------------------------------------|--------------------------------------|
+| ![](assets/screenshots/home.png) | ![](assets/screenshots/product.png) | ![](assets/screenshots/checkout.png) |
+
+---
+
+## 📌 Notes
+
+- Make sure your internet is active for fetching any remote images/assets if required.
+- You may need to enable multi-dex or update Gradle settings if your build fails on Android.
+
+---
+
+## 👨‍💻 Author
+
+- Developed by [Tayyab Ejaz](https://github.com/tayyabejaz)
+- Email: tayyab.ejaz0604@gmail.com
+
+---
