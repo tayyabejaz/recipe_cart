@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipe_cart/routes/app_routes.dart';
+import 'package:recipe_cart/screens/recipe_details_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   final List<Map<String, String>> recommendedProducts = [
@@ -197,11 +198,22 @@ class HomeScreen extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: products.length,
         itemBuilder: (context, index) {
-          return _buildProductCard(products[index]);
+          return GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => RecipeDetailsScreen(), // <-- Navigate on tap
+                ),
+              );
+            },
+            child: _buildProductCard(products[index]),
+          );
         },
       ),
     );
   }
+
 
   Widget _buildProductCard(Map<String, String> product) {
     return Container(

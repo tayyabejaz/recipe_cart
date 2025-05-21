@@ -1,12 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class SignUpScreen extends StatelessWidget {
+class SignUpScreen extends StatefulWidget {
+  @override
+  State<SignUpScreen> createState() => _SignUpScreenState();
+}
+
+class _SignUpScreenState extends State<SignUpScreen> {
   final _formKey = GlobalKey<FormState>();
+
+  final TextEditingController _usernameController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-    // Orange gradient background
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -24,7 +32,7 @@ class SignUpScreen extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFFFF5C2E), // deep orange
+                      color: Color(0xFFFF5C2E), // Brand orange
                     ),
                   ),
                 ),
@@ -43,19 +51,34 @@ class SignUpScreen extends StatelessWidget {
                   key: _formKey,
                   child: Column(
                     children: [
-                      _buildInputField(label: 'Username', hint: 'Sufian Akram'),
-                      const SizedBox(height: 16),
                       _buildInputField(
-                        label: 'Email',
-                        hint: 'sufianakram07@gmail.com',
-                        suffixIcon: Icon(Icons.check, color: Colors.green),
+                        controller: _usernameController,
+                        label: 'Username',
+                        hint: 'Sufian Akram',
                       ),
                       const SizedBox(height: 16),
                       _buildInputField(
+                        controller: _emailController,
+                        label: 'Email',
+                        hint: 'sufianakram07@gmail.com',
+                        suffixIcon: Icon(Icons.check, color: Colors.green),
+                        validator: (value) {
+                          if (value == null || value.isEmpty) return 'Email is required';
+                          if (!value.contains('@')) return 'Invalid email';
+                          return null;
+                        },
+                      ),
+                      const SizedBox(height: 16),
+                      _buildInputField(
+                        controller: _passwordController,
                         label: 'Password',
                         hint: '*********',
                         obscureText: true,
                         suffixIcon: Icon(Icons.visibility_off, color: Colors.grey),
+                        validator: (value) {
+                          if (value == null || value.length < 6) return 'Minimum 6 characters';
+                          return null;
+                        },
                       ),
                     ],
                   ),
@@ -84,7 +107,7 @@ class SignUpScreen extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
-                        // Sign-up logic
+                        Navigator.pushReplacementNamed(context, '/home');
                       }
                     },
                     style: ElevatedButton.styleFrom(
@@ -128,19 +151,22 @@ class SignUpScreen extends StatelessWidget {
     required String hint,
     bool obscureText = false,
     Widget? suffixIcon,
+    TextEditingController? controller,
+    String? Function(String?)? validator,
   }) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(label,
-            style: TextStyle(
-              color: Colors.black87,
-              fontSize: 14,
-              fontWeight: FontWeight.w500,
-            )),
+        Text(
+          label,
+          style:
+          TextStyle(color: Colors.black87, fontSize: 14, fontWeight: FontWeight.w500),
+        ),
         const SizedBox(height: 6),
         TextFormField(
+          controller: controller,
           obscureText: obscureText,
+          validator: validator,
           decoration: InputDecoration(
             hintText: hint,
             suffixIcon: suffixIcon,

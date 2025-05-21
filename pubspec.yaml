@@ -79,6 +79,7 @@ flutter:
      - assets/images/my_cart/ginger.png
      - assets/images/placeholder.png
      - assets/images/logo.png
+     - assets/images/black_pepper.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
