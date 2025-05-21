@@ -28,8 +28,6 @@
 |------------|----------------|----------------|----------------|
 | ![Home](screenshots/home.png) | ![Explore](screenshots/explore.png) | ![Product](screenshots/product.png) | ![Checkout](screenshots/checkout.png) |
 
-> _Place actual screenshots inside the `/screenshots/` folder and update paths above accordingly._
-
 ---
 
 ## 📁 Folder Structure
